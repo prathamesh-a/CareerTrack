@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "181463016786",
+    "project_id": "careertrack-809a8",
+    "storage_bucket": "careertrack-809a8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:181463016786:android:c9ee1ce57bc88f70bf068b",
+        "android_client_info": {
+          "package_name": "me.prathamesh.careertrack"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "181463016786-bp12msg26vhv8t7ildh8go49702jqunp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBgvTwTjkaNoxjY1t1kGNurbQ-8VvuURQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "181463016786-bp12msg26vhv8t7ildh8go49702jqunp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

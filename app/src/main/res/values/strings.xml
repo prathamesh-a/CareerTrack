@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">CareerTrack</string>
+    <string name="open_nav">Drawer Open</string>
+    <string name="close_nav">Drawer Close</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="do_not_have_account_sign_up">Do not have account? <b>Sign Up</b></string>
+    <string name="already_have_account_login">Already have account? <b>Login</b></string>
+</resources>

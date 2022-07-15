@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QueryFragment"
+    android:background="#BFD7EA"
+    android:padding="30dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:fontFamily="@font/roboto"
+        android:id="@+id/query_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="If you want to make your career in Engineering,\nQuery us"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="25dp"/>
+
+<!--    NAME -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/nameTl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/query_text"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/roboto"
+        android:paddingTop="40dp"
+        android:paddingBottom="10dp">
+
+        <EditText
+            android:id="@+id/nameEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#80FFFFFF"
+            android:fontFamily="@font/roboto"
+            android:hint="Name"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--    MOBILE -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:id="@+id/mobileTl"
+        android:fontFamily="@font/roboto"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/nameTl">
+
+        <EditText
+            android:fontFamily="@font/roboto"
+            android:id="@+id/mobileEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mobile"
+            android:inputType="phone"
+            android:background="#80FFFFFF"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <!--    COURSE -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:id="@+id/courseTl"
+        android:fontFamily="@font/roboto"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/mobileTl">
+
+        <EditText
+            android:fontFamily="@font/roboto"
+            android:id="@+id/courseEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Course"
+            android:background="#80FFFFFF"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--    CITY STATE -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:id="@+id/cityTl"
+        android:fontFamily="@font/roboto"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/courseTl">
+
+        <EditText
+            android:fontFamily="@font/roboto"
+            android:id="@+id/cityEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="City, State"
+            android:background="#80FFFFFF"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--    COUNTRY -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="25dp"
+        android:id="@+id/countryTl"
+        android:fontFamily="@font/roboto"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/cityTl"
+        >
+
+        <EditText
+            android:fontFamily="@font/roboto"
+            android:id="@+id/countryEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Country"
+            android:background="#80FFFFFF"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/submitBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/countryTl"
+        android:backgroundTint="#FFC857"
+        android:fontFamily="@font/roboto"
+        android:text="Submit"
+        android:textColor="@color/black"
+        android:textSize="15dp" />
+
+</RelativeLayout>

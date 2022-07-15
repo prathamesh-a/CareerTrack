@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:orientation="vertical"
+    android:padding="30dp"
+    android:background="#BFD7EA">
+<!--    android:background="@drawable/toolbar_gradient"-->
+
+    <TextView
+        android:fontFamily="@font/roboto"
+        android:id="@+id/main_login_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="Career Track"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="35dp"/>
+
+    <TextView
+        android:fontFamily="@font/roboto"
+        android:id="@+id/description_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_login_text"
+        android:text="Find the best path here!"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="15dp"/>
+
+    <TextView
+        android:fontFamily="@font/roboto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/emailTl"
+        android:text="Log In"
+        android:paddingBottom="20dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="45dp"/>
+
+
+    <!-- EMAIL -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:startIconDrawable="@drawable/ic_baseline_mail_24"
+        android:layout_above="@id/passTl"
+        android:paddingBottom="10dp"
+        android:id="@+id/emailTl"
+        android:fontFamily="@font/roboto">
+
+        <EditText
+            android:fontFamily="@font/roboto"
+            android:id="@+id/emailEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:background="#80FFFFFF"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <!-- PASSWORD -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passTl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:startIconDrawable="@drawable/ic_baseline_lock_24"
+        app:passwordToggleEnabled="true"
+        android:layout_centerInParent="true"
+        android:paddingBottom="35dp"
+        android:fontFamily="@font/roboto">
+
+        <EditText
+            android:fontFamily="@font/roboto"
+            android:id="@+id/passEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:background="#80FFFFFF"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:fontFamily="@font/roboto"
+        android:id="@+id/loginBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LOGIN"
+        android:backgroundTint="#FFC857"
+        android:textColor="#323031"
+        android:layout_below="@id/passTl"/>
+
+    <TextView
+        android:fontFamily="@font/roboto"
+        android:id="@+id/signuptext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/do_not_have_account_sign_up"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="15dp"/>
+
+</RelativeLayout>
